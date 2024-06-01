@@ -1,0 +1,53 @@
+/* FullPageCard.css */
+.fp-full-page-card {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.fp-content {
+  background-color: rgb(63, 62, 62);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90vw;
+  height: 90vh;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+.fp-content h2 {
+  margin-top: 0;
+}
+
+.fp-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.fp-content p {
+  text-align: left;
+}
+
+.fp-content button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #00ff51;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+ 
+}
+
+.fp-content button:hover {
+  background-color: #0056b3;
+}
