@@ -241,4 +241,9 @@ body{
 
 
 /* Styles for screens between 768px and 1024px (medium-sized screens) */
-
+@media (max-width: 600px) {
+ .course{
+  height: 50px;
+  width: 100px;
+ }
+}
