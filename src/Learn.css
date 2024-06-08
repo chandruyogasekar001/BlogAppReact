@@ -61,7 +61,9 @@
   .sidebar nav ul li:hover {
     background-color: #4CAF50;
   }
-  
+  ul{
+  list-style-type: none;
+}
   .content {
     flex: 1;
     padding: 20px;
@@ -73,6 +75,7 @@
     display: flex;
     height: 100vh;
     font-family: Arial, sans-serif;
+    flex-direction: row;
   }
   
   .sidebar {

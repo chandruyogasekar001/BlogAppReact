@@ -1,6 +1,14 @@
 .App {
   text-align: center;
   background-color: #ebebeb;
+  
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #f0f0f0;
+  color: #000000;
 }
 body{
   overflow: hidden;
@@ -85,7 +93,10 @@ body{
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 20px;
-  width: 50%;
+ 
+  width: 90%;
+  height: 80%;
+  
 }
 
 .blog-preview h3 {
@@ -221,10 +232,6 @@ body{
     align-items: center;
 }
 /* Hide scrollbar on all browsers */
-.blog-list {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* Internet Explorer / Edge */
-}
 
 .blog-list::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
@@ -246,4 +253,125 @@ body{
   height: 50px;
   width: 100px;
  }
+}
+.list{
+  display: flex;
+  flex-direction: row;
+}
+/* hi */
+/* App.css */
+.app {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #070606;
+  color: #ffffff;
+}
+
+.nav {
+  width: 200px;
+  background-color: #1e213a;
+  padding: 20px;
+  overflow-y: auto;
+  height: 90vh;
+}
+
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav button {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  text-align: left;
+}
+
+.nav button.active {
+  background-color: #3d3f63;
+}
+
+.description {
+  flex: 1;
+  padding: 20px;
+  height: 90vh;
+  width: 80vw;
+  overflow: scroll
+}
+
+.description h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.description p {
+  font-size: 16px;
+}
+
+.active {
+  background-color: #3d3f63;
+}
+.blow{
+  display: flex;
+
+}
+h3{
+  color: #faf1f1;
+}
+.hh{
+  display: flex;
+  flex-wrap: wrap;
+  scrollbar-color: black;
+  scrollbar-width: thin;
+}
+.startstop{
+  position: absolute;
+  top: 70%;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  background-color: #8c0feb;
+  color: #ebebeb;
+  border: 5px soild white;
+}
+.navnav{
+  display: flex;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  flex-direction: column;
+  background-color: #01d1fb;
+  border-radius: 20px;
+ 
+}
+.navv{
+  height: 100px;
+  width: 40px;
+  border-radius: 0%;
+  gap: 0;
+  padding: 0%;
+  background-color: #0c5490;
+  color: white;
+  border-radius: 20px;
+}
+@media (min-width: 768px) {
+  #bloglist{
+    width: 50vw;
+  }
+}
+.App{
+  scrollbar-color: black;
+  scrollbar-width: thin;
+}
+.ii{
+  background-color: rgb(152, 240, 240);
+  color: rgb(0, 0, 0);
 }

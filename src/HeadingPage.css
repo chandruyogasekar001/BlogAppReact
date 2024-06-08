@@ -1,0 +1,138 @@
+/* HeadingPage.css */
+
+.app {
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-content: flex-start;
+  align-items: center;
+  padding: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #98c4f4;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  height: 50px;
+}
+
+.button.active {
+  background-color: #0056b3;
+}
+
+.btt {
+  display: flex;
+  align-items: center;
+  height: 10%;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  width: 100vw;
+  align-content: flex-end;
+  flex-direction: row;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.headings-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.nav-container {
+  flex: 1;
+  padding: 10px;
+  
+  position: relative;
+}
+
+.nav {
+  display: block;
+}
+
+.nav-item {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.nav-item.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.description {
+  flex: 3;
+  padding: 10px;
+}
+
+.dropdown-button {
+  padding: 10px 20px;
+  background-color: #98c4f4;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.nav.dropdown-open {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .headings-container {
+    flex-direction: column;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .dropdown-button {
+    display: block;
+  }
+
+  .nav.dropdown-open {
+    display: block;
+    position: absolute;
+    background-color: rgb(84, 76, 76);
+    width: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow-y: scroll;
+    scrollbar-color: black;
+  scrollbar-width: thin;
+  }
+}
+
+.li{
+    width: 90%;
+}
+   
+  
+    .description::-webkit-scrollbar {
+      display: none;  /* Safari and Chrome */
+    }
+  
+    .li::-webkit-scrollbar {
+        display: none;  /* Safari and Chrome */
+      }
+    
+  

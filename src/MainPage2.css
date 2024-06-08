@@ -1,0 +1,118 @@
+.main-page1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .header1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .course1 {
+    padding: 10px 20px;
+    background-color: #99bfe8;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .course1:hover {
+    background-color: #1f4f82;
+  }
+  
+  .navigation-buttons1 {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .navigation-buttons1 button {
+    padding: 10px 20px;
+    background-color: #82c8d6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .navigation-buttons1 button:hover {
+    background-color: #bacfd2;
+  }
+  
+ 
+  .blog-preview1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .blog-preview1 h3 {
+    margin: 10px 0;
+  }
+  
+  .blog-preview1 p {
+    color: #666;
+  }
+  
+  .blog-preview1 button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .blog-preview1 button:hover {
+    background-color: #0056b3;
+  }
+  
+  #blogList {
+   
+    width: 80%;
+  }
+  @media (max-width: 768px) {
+    #blogList {
+   
+        width: 90%;
+      }
+  }
+    
+  .blog-list1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    
+    height: 90vh;
+    max-width: 1200px;
+    overflow-y: scroll;
+
+  }
+  .blog-list1::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+  
+  .blog-preview1 {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    flex: 1 0 calc(33.333% - 40px); /* Adjusted width for grid layout */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .blog-preview1 {
+      flex: 1 0 calc(50% - 40px); /* Adjusted width for mobile grid layout */
+    }
+  }
+    

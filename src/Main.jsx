@@ -3,6 +3,8 @@ import MainPage from "./MainPage";
 import BlogAdmin from "./BlogAdmin";
 import Learn from "./Learn";
 import Login from "./Login";
+import HeadingsPage from "./HeadingsPage";
+import MainPage2 from "./MainPage2";
 
 export default function Main() {
   const [tab, setTab] = useState("");
@@ -42,8 +44,10 @@ export default function Main() {
       return <BlogAdmin onLogin={handleLogin} setTab={handleTabChange} />;
     case "Learn":
       return <Learn setTab={handleTabChange} />;
-    case "Login":
-        return <Login onLogin={handleLogin} setTab={handleTabChange} />;
+    case "blog":
+        return <MainPage2 onLogin={handleLogin} setTab={handleTabChange} />;
+    case "course":
+          return <HeadingsPage  setTab={handleTabChange} />;
     default:
       return <MainPage onLogin={handleLogin} setTab={handleTabChange} />;
   }

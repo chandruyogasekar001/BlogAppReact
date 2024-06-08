@@ -50,6 +50,14 @@ function Learn({ setTab }) {
   const handleTab = () => {
     setTab('');
   };
+  
+
+ const handleTech = () => {
+    setTab('course');
+  }; 
+  const handleBlog = () => {
+    setTab('blog');
+  };
 
   // Function to strip HTML tags
   const stripHtml = (html) => {
@@ -76,7 +84,14 @@ function Learn({ setTab }) {
         </nav>
       </div>
       <div className="content">
-        <button onClick={handleTab}>Blog View / back</button>
+        
+        <div className='navnav'>
+        <button onClick={handleTab} className='navv'>Home</button>
+        
+        <button className='navv ii' style={{fontSize:'10px'}} onClick={handleTech}>LEARN TECH</button>
+        <button onClick={handleBlog} className='navv'>Blog</button>
+        
+        </div>
         <input
           type="text"
           placeholder="Search..."
